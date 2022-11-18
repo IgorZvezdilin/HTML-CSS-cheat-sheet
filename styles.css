@@ -1,23 +1,49 @@
 body{
     background-color: antiquewhite;
 }
-nav, h1,h2,h3 {
-    font-family: 'Bebas Neue', sans-serif;
+nav, h1,h2,h3,#htmlBtn, #cssBtn {
+    font-family: 'Libre Baskerville', sans-serif;
+}
+p, article {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 
+h1 {
+    position: relative;
+    display: inline-block;
+    left: 32%;
+    border-top: 7px solid black;
+    border-bottom: 7px solid black;
+}
 
+h3 {
+    position: relative;
+}
+
+.backToTheTop {
+    color: rgb(110, 110, 110);
+    text-decoration-style: dashed;
+}
+
+/* navigation toolbar */
 nav {
     margin-left: 0px;
-
     padding-left: 0px;
     list-style: none;
     background-color: #BFA830;
 }
 
+nav ul {
+    position: relative;
+    left: 25%;
+}
 
 nav li {
-    display: inline;    
+    display: inline-block; 
+    margin-right: 30px;   
+    
 }
 
 nav a {
@@ -28,9 +54,12 @@ nav a {
     padding: 10px;
     border: 2px inset black;
     background-color: #028E9B;
-    border-radius: 10%;
+    border-radius: 5px;
     color: black;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 nav a:hover {
@@ -38,8 +67,98 @@ nav a:hover {
     box-shadow: 5px 5px black;
 }
 
-table,
-td {
-    border: 2px solid black;
+
+/*table*/
+
+table {
+    margin-top: 10px;
 }
 
+td {
+    border: 2px solid black;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.description-tags-propertyes {
+    text-align: left;
+}
+
+
+ /*main*/
+
+.main, .html, .css, .about {
+    background-color: #DFC183;
+    border: 3px solid black;
+    border-radius: 10px;
+ }
+
+
+.html, .css, .about {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+ /*HTML*/
+
+#htmlTags, #cssTags {
+    display: none;
+}
+
+#htmlBtn, #cssBtn {
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #028E9B;
+    text-transform: uppercase;
+    box-shadow: 5px 5px black ;
+}
+
+#htmlBtn:hover {
+ background-color: gold;
+ box-shadow: 5px 5px black ;
+}
+
+.htmlContent {
+    visibility: collapse;
+}
+
+#htmlTags:checked ~ .htmlContent {
+    visibility: visible;
+}
+
+#htmlTags:checked ~ #htmlBtn {
+    background-color: grey;
+}
+ /*CSS*/
+
+
+#cssBtn:hover {
+    background-color: gold;
+    box-shadow: 5px 5px black ;
+   }
+   
+.cssContent {
+   visibility: collapse;
+}
+   
+#cssTags:checked ~ .cssContent {
+    visibility: visible;
+}
+   
+#cssTags:checked ~ #cssBtn {
+    background-color: grey;
+}
+
+ /*about*/
+
+.github {
+    color: rgb(63, 0, 63);
+}

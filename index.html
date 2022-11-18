@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train project</title>
     <link href="./styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,17 +22,20 @@
         </nav>
         <h1>HTML and CSS Cheat sheet</h1>
     </header>
+
     <main>
         <section class ='main'>
+
             <h2><a name='main'>Welcome!</a></h2>
-            <p>This site was written to help me train my skills and create the list with the most popular tags of HTML and the most popular style of CSS. This site was written using HTML and CSS only. Back to the <a href='#top'>table of contents</a> </p>
+            <p>This site was written to help me train my skills and create the list with the most popular tags of HTML and the most popular styles of CSS. This site was written using HTML and CSS only. <a href='#top' class="backToTheTop"> Back to the  menu</a> </p>
 
         </section>
         <section class = 'html'>
             <h2><a name='html'>HTML</a></h2>
-            <article>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript). Back to the <a href='#top'>table of contents</a></article>
-            <table>
-                <caption>Usefull tags of HTML</caption>
+            <article>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript). <a href='#top' class="backToTheTop"> Back to the  menu</a></article>
+            <input type = "checkbox" id = "htmlTags">
+            <label for="htmlTags" id="htmlBtn">Usefull tags of HTML</label>
+            <table class = htmlContent>                    
                 <thead>
                     <tr>
                         <td>Tag</td>
@@ -41,102 +47,113 @@
                     <tr>
                         <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
                         <td>Headings</td>
-                        <td>The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> HTML elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the lowest.</td> 
+                        <td class="description-tags-propertyes">The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> HTML elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the lowest.</td> 
                    </tr>
                     <tr>
                         <td><code>&lt;link&gt;</code></td>
                         <td>Link</td>
-                        <td>The <code>&lt;link&gt;</code> HTML element specifies relationships between the current document and an external resource.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;link&gt;</code> HTML element specifies relationships between the current document and an external resource.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;title&gt;</code></td>
                         <td>Title</td>
-                        <td>The <code>&lt;title&gt;</code> HTML element defines the document's title that is shown in a browser's title bar or a page's tab.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;title&gt;</code> HTML element defines the document's title that is shown in a browser's title bar or a page's tab.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;article&gt;</code></td>
                         <td>Article</td>
-                        <td>The <code>&lt;article&gt;</code> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable</td>
+                        <td class="description-tags-propertyes">The <code>&lt;article&gt;</code> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable</td>
                     </tr>
                     <tr>
                         <td><code>&lt;nav&gt;</code></td>
                         <td>Navigation</td>
-                        <td>The <code>&lt;nav&gt;</code> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents</td>
+                        <td class="description-tags-propertyes">The <code>&lt;nav&gt;</code> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents</td>
                     </tr>
                     <tr>
                         <td><code>&lt;a&gt;</code></td>
                         <td>anchor element</td>
-                        <td>The <code>&lt;a&gt;</code> HTML element, with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;a&gt;</code> HTML element, with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;code&gt;</code></td>
                         <td>Code</td>
-                        <td>The <code>&lt;code&gt;</code> HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;code&gt;</code> HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;mark&gt;</code></td>
                         <td>Mark</td>
-                        <td>The <code>&lt;mark&gt;</code> HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;mark&gt;</code> HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;span&gt;</code></td>
                         <td>Span</td>
-                        <td>The <code>&lt;span&gt;</code> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;span&gt;</code> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values.</td>
                     </tr> 
                     <tr>
                         <td><code>&lt;time&gt;</code></td>
                         <td>Time</td>
-                        <td>The <code>&lt;time&gt;</code> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;time&gt;</code> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;area&gt;</code></td>
                         <td>Area</td>
-                        <td>The <code>&lt;area&gt;</code> HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext link. This element is used only within a <code>&lt;map&gt;</code> element.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;area&gt;</code> HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext link. This element is used only within a <code>&lt;map&gt;</code> element.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;audio&gt;</code></td>
                         <td>Audio</td>
-                        <td>The <code>&lt;audio&gt;</code> HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <code>&lt;source&gt;</code> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;audio&gt;</code> HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <code>&lt;source&gt;</code> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;img&gt;</code></td>
                         <td>Image</td>
-                        <td>The <code>&lt;img&gt;</code> HTML element embeds an image into the document.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;img&gt;</code> HTML element embeds an image into the document.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;map&gt;</code></td>
                         <td>Map</td>
-                        <td>The <code>&lt;map&gt;</code> HTML element is used with <code>&lt;area&gt;</code> elements to define an image map (a clickable link area).</td>
+                        <td class="description-tags-propertyes">The <code>&lt;map&gt;</code> HTML element is used with <code>&lt;area&gt;</code> elements to define an image map (a clickable link area).</td>
                     </tr>
                     <tr>
                         <td><code>&lt;video&gt;</code></td>
                         <td>Video</td>
-                        <td>The <code>&lt;video&gt;</code> HTML element embeds a media player which supports video playback into the document. You can use <code>&lt;video&gt;</code> for audio content as well, but the <code>&lt;audio&gt;</code> element may provide a more appropriate user experience.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;video&gt;</code> HTML element embeds a media player which supports video playback into the document. You can use <code>&lt;video&gt;</code> for audio content as well, but the <code>&lt;audio&gt;</code> element may provide a more appropriate user experience.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;caption&gt;</code></td>
                         <td>Caption</td>
-                        <td>The <code>&lt;caption&gt;</code> HTML element specifies the caption (or title) of a table.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;caption&gt;</code> HTML element specifies the caption (or title) of a table.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;figure&gt;</code></td>
                         <td>Figure</td>
-                        <td>The <code>&lt;figure&gt;</code> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element. The figure, its caption, and its contents are referenced as a single unit.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;figure&gt;</code> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element. The figure, its caption, and its contents are referenced as a single unit.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;figcaption&gt;</code></td>
                         <td>Figure caption</td>
-                        <td>The <code>&lt;figcaption&gt;</code> HTML element represents a caption or legend describing the rest of the contents of its parent <code>&lt;figure&gt;</code> element.</td>
+                        <td class="description-tags-propertyes">The <code>&lt;figcaption&gt;</code> HTML element represents a caption or legend describing the rest of the contents of its parent <code>&lt;figure&gt;</code> element.</td>
                     </tr>
                     <tr>
                         <td><code>&lt;canvas&gt;</code></td>
                         <td>canvas</td>
-                        <td>Use the HTML <code>&lt;canvas&gt;</code> element with either the canvas scripting API or the WebGL API to draw graphics and animations.</td>
+                        <td class="description-tags-propertyes">Use the HTML <code>&lt;canvas&gt;</code> element with either the canvas scripting API or the WebGL API to draw graphics and animations.</td>
                     </tr>
+                    <tr>
+                        <td><code>&lt;input&gt;</code></td>
+                        <td>input</td>
+                        <td class="description-tags-propertyes">Use the HTML <code>&lt;input&gt;</code> element to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;label&gt;</code></td>
+                        <td>label</td>
+                        <td class="description-tags-propertyes">Use the HTML <code>&lt;label&gt;</code> element to represent a caption for an item in a user interface.</td>
+                    </tr>
+
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">    
+                        <td colspan="3" class="description-tags-propertyes">    
                             If you want to learn more, visit <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target="_blank">MDN - HTML</a> 
                         </td>
                     </tr>    
@@ -147,76 +164,154 @@
 
         <section class = 'css'>
             <h2><a name='css'>CSS</a></h2>
-            <article>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. Back to the <a href='#top'>table of contents</a></article>
-            <table>
-                <caption>Usefull styles of CSS</caption>
+            <article>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. <a href='#top' class="backToTheTop"> Back to the  menu</a></article>
+            <input type = "checkbox" id = "cssTags">
+            <label for="cssTags" id="cssBtn">Usefull properties of CSS</label>
+            <table class = 'cssContent'>
                 <thead>
                     <tr>
-                        <td>Tag</td>
+                        <td>Property</td>
                         <td>Name</td>
                         <td>Description</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><code>&lt;color&gt;</code></td>
+                        <td><code>color</code></td>
                         <td>color</td>
-                        <td>The color CSS property sets the foreground color value of an element's text and text decorations, and sets the <code>&lt;currentcolor&gt;</code> value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.</td> 
+                        <td class="description-tags-propertyes">The color CSS property sets the foreground color value of an element's text and text decorations, and sets the <code>&lt;currentcolor&gt;</code> value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.</td> 
                    </tr>
                     <tr>
-                        <td><code>&lt;list-style-type&gt;</code></td>
+                        <td><code>list-style-type</code></td>
                         <td>Style of list</td>
-                        <td>The list-style-type CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.</td>
+                        <td class="description-tags-propertyes">The list-style-type CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;table-layout&gt;</code></td>
+                        <td><code>table-layout</code></td>
                         <td>table-layout</td>
-                        <td>The table-layout CSS property sets the algorithm used to lay out table cells, rows, and columns.</td>
+                        <td class="description-tags-propertyes">The table-layout CSS property sets the algorithm used to lay out table cells, rows, and columns.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;border&gt;</code></td>
+                        <td><code>border</code></td>
                         <td>border</td>
-                        <td>The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color.</td>
+                        <td class="description-tags-propertyes">The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;background&gt;</code></td>
+                        <td><code>background</code></td>
                         <td>background</td>
-                        <td>The background shorthand CSS property sets all background style properties at once, such as color  (background-color), image (background-image), origin (background-origin) and size (background- size), or repeat method.</td>
+                        <td class="description-tags-propertyes">The background shorthand CSS property sets all background style properties at once, such as color  (background-color), image (background-image), origin (background-origin) and size (background- size), or repeat method.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;background-attachment&gt;</code></td>
+                        <td><code>background-attachment</code></td>
                         <td>background attachment</td>
-                        <td>The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.</td>
+                        <td class="description-tags-propertyes">The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;marging&gt;</code></td>
+                        <td><code>marging</code></td>
                         <td>Marging</td>
-                        <td>The margin CSS shorthand property sets the margin area on all four sides of an element.</td>
+                        <td class="description-tags-propertyes">The margin CSS shorthand property sets the margin area on all four sides of an element.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;padding&gt;</code></td>
+                        <td><code>padding</code></td>
                         <td>Padding</td>
-                        <td>The padding CSS shorthand property sets the padding area on all four sides of an element at once.</td>
+                        <td class="description-tags-propertyes">The padding CSS shorthand property sets the padding area on all four sides of an element at once.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;font&gt;</code></td>
+                        <td><code>font</code></td>
                         <td>font</td>
-                        <td>The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font. The font includes font-family, font-size, font-weight, font-stretch, font-style, font-variant, font-weight and line-height</td>
+                        <td class="description-tags-propertyes">The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font. The font includes font-family, font-size, font-weight, font-stretch, font-style, font-variant, font-weight and line-height</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;grid&gt;</code></td>
+                        <td><code>grid</code></td>
                         <td>grid</td>
-                        <td>CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.This shorthand property includes a lot of different properties.</td>
+                        <td class="description-tags-propertyes">CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.This shorthand property includes a lot of different properties.</td>
                     </tr>
                     <tr>
-                        <td><code>&lt;flex&gt;</code></td>
+                        <td><code>flex</code></td>
                         <td>flex</td>
-                        <td>The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container. It includes flex-grow, flex-shrink, flex-basis</td>
+                        <td class="description-tags-propertyes">The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container. It includes flex-grow, flex-shrink, flex-basis</td>
+                    </tr>
+                    <tr>
+                        <td><code>@font-face</code></td>
+                        <td>font-face</td>
+                        <td class="description-tags-propertyes">The @font-face CSS at-rule specifies a custom font with which to display text; the font can be loaded from either a remote server or a locally-installed font on the user's own computer.</td>
+                    </tr>
+                    <tr>
+                        <td><code>position</code></td>
+                        <td>position</td>
+                        <td class="description-tags-propertyes">The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.</td>
+                    </tr>
+                    <tr>
+                        <td><code>position</code></td>
+                        <td>position</td>
+                        <td class="description-tags-propertyes">The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.</td>
+                    </tr>
+                    <tr>
+                        <td><code>display</code></td>
+                        <td>display</td>
+                        <td class="description-tags-propertyes">The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.</td>
+                    </tr>
+                    <tr>
+                        <td><code>left,right,top,bottom</code></td>
+                        <td>positioning</td>
+                        <td class="description-tags-propertyes">The left,right,top,bottom CSS properties position the block relative to the edges of the browser window.</td>
+                    </tr>
+                    <tr>
+                        <td><code>text-decoration-style</code></td>
+                        <td>text decoration style</td>
+                        <td class="description-tags-propertyes">The text-decoration-style CSS property sets the style of the lines specified by text-decoration-line. The style applies to all lines that are set with text-decoration-line.</td>
+                    </tr>
+                    <tr>
+                        <td><code>text-align</code></td>
+                        <td>text align</td>
+                        <td class="description-tags-propertyes">The text-align CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.</td>
+                    </tr>                    
+                    <tr>
+                        <td><code>text-transform</code></td>
+                        <td>text transform</td>
+                        <td class="description-tags-propertyes">The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.</td>
+                    </tr>
+                    <tr>
+                        <td><code>letter-spacing</code></td>
+                        <td>letter spacing</td>
+                        <td class="description-tags-propertyes">The letter-spacing CSS property sets the horizontal spacing behavior between text characters. This value is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing causes characters to spread farther apart, while negative values of letter-spacing bring characters closer together.</td>
+                    </tr>
+                    <tr>
+                        <td><code>word-spacing</code></td>
+                        <td>word spacing</td>
+                        <td class="description-tags-propertyes">The word-spacing CSS property sets the length of space between words and between tags.</td>
+                    </tr>
+                    <tr>
+                        <td><code>line-height</code></td>
+                        <td>line height</td>
+                        <td class="description-tags-propertyes">The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.</td>
+                    </tr>
+                    <tr>
+                        <td><code>visibility</code></td>
+                        <td>visibility</td>
+                        <td class="description-tags-propertyes">The visibility CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a &lt;table&gt;.</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><code>:hover</code></td>
+                        <td>hover</td>
+                        <td class="description-tags-propertyes">The :hover CSS pseudo-class matches when the user interacts with an element with a pointing device, but does not necessarily activate it. It is generally triggered when the user hovers over an element with the cursor (mouse pointer).</td>
+                    </tr>
+                    <tr>
+                        <td><code>:checked</code></td>
+                        <td>check</td>
+                        <td class="description-tags-propertyes">The :checked CSS pseudo-class selector represents any radio &lt;label&gt; (&lt;input type="radio"&gt;), checkbox (&lt;input type="checkbox"&gt;), or option (&lt;option&gt; in a &lt;select&gt;) element that is checked or toggled to an on state.</td>
+                    </tr>
+                    <tr>
+                        <td><code>box-shadow</code></td>
+                        <td>box shadow</td>
+                        <td class="description-tags-propertyes">The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">    
+                        <td colspan="3" class="description-tags-propertyes">    
                             If you want to learn more, visit <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target="_blank">MDN - CSS</a> 
                         </td>
                     </tr>    
@@ -227,8 +322,8 @@
     </main>
     <footer>
         <section class = 'about'>
-            <h3><a name='about'>About</a></h3>
-            <p>Hi there! My name is Igor and i`m junior full-stack developer. I would like to become really cool developer, so i practice, practice and practice until my fingers to the bones <span>Here there should by laugthing emoji</span>. This project one of some, which i repost on Github. This is my cheat sheet. If you want to write you opinion about this cite or see the rest of the project, check my <a href='https://github.com/IgorZvezdilin' target='_blank'>Github</a>.Back to the <a href='#top'>table of contents</a></p>
+            <h3><a name='about'>ABOUT</a></h3>
+            <p>Hi there! My name is Igor and i`m junior full-stack developer. I would like to become really cool developer, so i practice, practice and practice until my fingers to the bones <span>😂</span>. This project one of some, which i repost on Github. This is my cheat sheet. If you want to write you opinion about this cite or see the rest of the project, check my <a href='https://github.com/IgorZvezdilin' target='_blank' class="github">Github <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20"></a>. <a href='#top' class="backToTheTop"> Back to the  menu.</a></p>
 
         </section>
 
