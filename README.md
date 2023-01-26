@@ -5,4 +5,4 @@ At this project I introduce the most popular tags and atributes, by my opinion. 
 
 I believe that it will be usefull for novice developers.
 
-The site is [https://igorzvezdilin.github.io/HTML-CSS-cheat-sheet](here)
+The site is ([here](https://igorzvezdilin.github.io/HTML-CSS-cheat-sheet/))
